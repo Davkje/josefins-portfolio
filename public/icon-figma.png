@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="figma">
+<rect x="0.5" y="0.5" width="41" height="41" rx="8.5" fill="var(--fill-0, white)"/>
+<rect x="0.5" y="0.5" width="41" height="41" rx="8.5" stroke="var(--stroke-0, #D9D9D9)"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M21 21C21 17.738 23.6443 15.0938 26.9062 15.0938C30.1682 15.0938 32.8125 17.738 32.8125 21C32.8125 24.262 30.1682 26.9062 26.9062 26.9062C23.6443 26.9062 21 24.262 21 21Z" fill="var(--fill-0, #1ABCFE)"/>
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M9.1875 32.8125C9.1875 29.5505 11.8318 26.9062 15.0938 26.9062H21V32.8125C21 36.0745 18.3557 38.7188 15.0938 38.7188C11.8318 38.7188 9.1875 36.0745 9.1875 32.8125Z" fill="var(--fill-0, #0ACF83)"/>
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M21 3.28125V15.0938H26.9062C30.1682 15.0938 32.8125 12.4494 32.8125 9.1875C32.8125 5.92557 30.1682 3.28125 26.9062 3.28125H21Z" fill="var(--fill-0, #FF7262)"/>
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M9.1875 9.1875C9.1875 12.4494 11.8318 15.0938 15.0938 15.0938H21V3.28125H15.0938C11.8318 3.28125 9.1875 5.92557 9.1875 9.1875Z" fill="var(--fill-0, #F24E1E)"/>
+<path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M9.1875 21C9.1875 24.262 11.8318 26.9062 15.0938 26.9062H21V15.0938H15.0938C11.8318 15.0938 9.1875 17.738 9.1875 21Z" fill="var(--fill-0, #A259FF)"/>
+</g>
+</svg>
