@@ -21,6 +21,17 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
 	return {
 		title: `${project.title} — Josefin Moström`,
 		description: project.description[0],
+		openGraph: {
+			title: `${project.title} — Josefin Moström`,
+			description: project.description[0],
+			images: [project.image],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: `${project.title} — Josefin Moström`,
+			description: project.description[0],
+			images: [project.image],
+		},
 	};
 }
 
