@@ -4,6 +4,7 @@
   --background: #fbfbfb;
   --foreground: #111111;
   --mint: #ebfcec;
+  --header-height: 0px;
 }
 
 @theme inline {
@@ -22,4 +23,5 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }

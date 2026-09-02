@@ -14,12 +14,12 @@ export default function TestimonialBubble({ quote, date, name, title }: Testimon
 		<motion.div
 			initial={{ opacity: 0, scale: 0.8 }}
 			whileInView={{ opacity: 1, scale: 1 }}
-			viewport={{ once: true }}
+			viewport={{ once: true, amount: 0.8 }}
 			transition={{ type: "spring", bounce: 0.5, duration: 0.6 }}
-			className="flex flex-col gap-5"
+			className="flex flex-col gap-3"
 		>
-			<div className="flex items-center justify-center rounded-tl-[60px] rounded-tr-[60px] rounded-br-[60px] bg-[#f1f1f1] p-4 sm:rounded-tl-[50px] sm:rounded-tr-[50px] sm:rounded-br-[50px] sm:p-6">
-				<p className="whitespace-pre-line text-base font-normal leading-6 sm:text-xl">{quote}</p>
+			<div className="flex items-center justify-center rounded-t-[36px] rounded-br-[36px] rounded-bl-sm bg-[#f1f1f1] p-4 sm:p-6">
+				<p className="whitespace-pre-line font-normal leading-7 text-xl">{quote}</p>
 			</div>
 			<div className="flex flex-col gap-1">
 				<p className="text-sm font-normal sm:text-base">{date}</p>

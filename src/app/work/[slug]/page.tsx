@@ -10,9 +10,7 @@ export function generateStaticParams() {
 	return projects.map((project) => ({ slug: project.slug }));
 }
 
-export async function generateMetadata({
-	params,
-}: PageProps<"/work/[slug]">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/work/[slug]">): Promise<Metadata> {
 	const { slug } = await params;
 	const project = getProject(slug);
 
@@ -46,7 +44,9 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
 				{/* ── Heading, team & description ── */}
 				<section className="grid grid-cols-1 gap-10 px-6 py-16 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:px-22 lg:py-20">
 					<div className="flex flex-col gap-4">
-						<h1 className="text-[clamp(2rem,5vw,2.5rem)] font-bold leading-[1.2]">{project.title}</h1>
+						<h1 className="text-[clamp(2rem,5vw,2.5rem)] font-bold leading-[1.2]">
+							{project.title}
+						</h1>
 						<p className="text-base font-medium leading-[1.4] text-[#8c8c8c] sm:text-lg">
 							{project.category}
 						</p>
@@ -83,8 +83,8 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
 				)}
 
 				<div className="px-6 pb-16 sm:px-10 lg:px-22 lg:pb-24">
-					<Link href="/#work" className="w-fit text-base font-medium underline">
-						back to projects
+					<Link href="/#work" className="w-fit text-lg font-medium underline">
+						Back to projects
 					</Link>
 				</div>
 

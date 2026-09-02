@@ -1,9 +1,34 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Nav() {
+	const headerRef = useRef<HTMLElement>(null);
+
+	useEffect(() => {
+		const header = headerRef.current;
+		if (!header) return;
+
+		const setHeaderHeight = () => {
+			document.documentElement.style.setProperty(
+				"--header-height",
+				`${header.offsetHeight}px`,
+			);
+		};
+
+		setHeaderHeight();
+		const observer = new ResizeObserver(setHeaderHeight);
+		observer.observe(header);
+		return () => observer.disconnect();
+	}, []);
+
 	return (
-		<header className="bg-white sticky top-0 z-50 flex w-full flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 py-4 sm:justify-between sm:px-10 sm:py-5 lg:px-20 lg:py-6">
+		<header
+			ref={headerRef}
+			className="bg-white sticky top-0 z-50 flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-4 sm:px-10 sm:py-5 lg:py-6"
+		>
 			<Link
 				href="/"
 				aria-label="Josefin Moström — home"
@@ -18,6 +43,9 @@ export default function Nav() {
 				/>
 			</Link>
 			<nav className="flex items-center gap-4 text-sm font-medium text-black sm:gap-8 sm:text-lg lg:gap-14 lg:text-xl">
+				<Link href="/#work" className="hover:opacity-60 transition-opacity">
+					Projects
+				</Link>
 				<Link href="/about" className="hover:opacity-60 transition-opacity">
 					About
 				</Link>

@@ -4,7 +4,7 @@ export default function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative flex md:min-h-[80vh] flex-col items-center justify-center gap-10 bg-[#6dffad] px-6 py-16 sm:px-10 lg:flex-row lg:items-end lg:justify-between lg:gap-16 lg:px-25 lg:py-24 text-left"
+			className="relative flex md:min-h-[80vh] flex-col items-center justify-center gap-10 bg-[#6dffad] px-6 py-16 sm:px-10 lg:flex-row lg:gap-16 lg:px-25 lg:py-24 text-left"
 		>
 			<div className="flex flex-col place-self-start gap-4 lg:max-w-300">
 				<p className="text-xl font-bold opacity-80 text-black sm:text-2xl lg:text-[32px]">
@@ -14,7 +14,7 @@ export default function Hero() {
 					Digital designer based in Stockholm.
 				</h1>
 			</div>
-			<div className="group absolute -bottom-30 right-10 md:right-2 size-40 shrink-0 overflow-hidden rounded-full sm:size-56 lg:size-83">
+			<div className="group hidden lg:block absolute -bottom-25 lg:right-6 shrink-0 overflow-hidden rounded-full size-83">
 				<Image
 					src="/images/sticker1.png"
 					alt="Hand-drawn illustration of Josefin"

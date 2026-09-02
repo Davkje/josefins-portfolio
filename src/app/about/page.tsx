@@ -213,11 +213,9 @@ export default function AboutPage() {
 
 				{/* ── Testimonials ── */}
 				<section className="flex flex-col gap-12 px-6 py-12 sm:px-10 lg:gap-16 lg:px-22 lg:py-16">
-					<div className="ml-auto flex w-full max-w-118.25 flex-col items-end gap-2">
-						<div className="w-full rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] bg-[#6cd3fd] p-4 sm:p-6">
-							<p className="text-lg font-normal leading-[1.2]">
-								What&apos;s it like working with me then???
-							</p>
+					<div className="ml-auto flex w-full max-w-118 flex-col items-end gap-2">
+						<div className=" rounded-t-[36px] rounded-bl-[36px] rounded-br-sm bg-[#6cd3fd] p-4 sm:p-6">
+							<p className="text-xl font-normal">What&apos;s it like working with me then???</p>
 						</div>
 						<p className="text-sm font-normal sm:text-base">Delivered</p>
 					</div>

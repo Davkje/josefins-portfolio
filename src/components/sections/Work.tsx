@@ -42,7 +42,7 @@ function WorkCard({ slug, title, tags, image }: WorkCardProps) {
 
 export default function Work() {
 	return (
-		<section id="work" className="bg-[#fbfbfb] px-6 py-12 sm:px-10 lg:px-14 lg:py-15">
+		<section id="work" className="bg-[#fbfbfb] px-6 py-12 sm:px-10 lg:px-10 lg:py-10">
 			<h2 className="mb-6 text-[clamp(1.5rem,4vw,2rem)] font-bold text-black sm:mb-10">Projects</h2>
 			<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-10">
 				{projects.map((project) => (
