@@ -16,13 +16,14 @@ export default function Hero() {
 			</div>
 			<div className="group hidden lg:block absolute -bottom-25 lg:right-6 shrink-0 overflow-hidden rounded-full size-83">
 				<Image
-					src="/images/sticker1.png"
+					src="/images/sticker1.webp"
 					alt="Hand-drawn illustration of Josefin"
 					fill
+					priority
 					className="object-cover transition-opacity duration-50 group-hover:opacity-0"
 				/>
 				<Image
-					src="/images/sticker2.png"
+					src="/images/sticker2.webp"
 					alt=""
 					fill
 					className="object-cover inset-0 opacity-0 transition-opacity duration-50 group-hover:opacity-100"

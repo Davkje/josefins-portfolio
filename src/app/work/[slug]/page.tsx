@@ -49,7 +49,13 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
 			<main className="bg-[#fbfbfb] overflow-x-hidden">
 				{/* ── Hero ── */}
 				<section className="relative aspect-1440/746 w-full overflow-hidden bg-[#f1f1f1]">
-					<Image src={project.heroImage} alt="" fill className="object-cover" priority />
+					<Image
+						src={project.heroImage}
+						alt={project.title}
+						fill
+						className="object-cover"
+						priority
+					/>
 				</section>
 
 				{/* ── Heading, team & description ── */}
@@ -77,12 +83,12 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
 
 				{/* ── Gallery ── */}
 				{project.gallery.length > 0 && (
-					<section className="flex flex-col gap-6 px-6 pb-16 sm:px-10 lg:gap-8 lg:px-22 lg:pb-24">
+					<section className="flex flex-col gap-6 px-6 pb-16 sm:px-10 lg:gap-8 lg:px-22">
 						{project.gallery.map((image, index) => (
 							<div key={image.src} className="relative w-full overflow-hidden bg-[#f1f1f1]">
 								<Image
 									src={image.src}
-									alt=""
+									alt={project.title}
 									width={image.width}
 									height={image.height}
 									className="h-auto w-full"
@@ -93,8 +99,11 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
 					</section>
 				)}
 
-				<div className="px-6 pb-16 sm:px-10 lg:px-22 lg:pb-24">
-					<Link href="/#work" className="w-fit text-lg font-medium underline">
+				<div className="px-6 pb-16 sm:px-10 lg:px-22">
+					<Link
+						href="/#work"
+						className="w-fit text-lg font-medium hover:cursor-pointer hover:underline"
+					>
 						Back to projects
 					</Link>
 				</div>

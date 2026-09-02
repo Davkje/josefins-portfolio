@@ -41,9 +41,9 @@ export default function ResumeAccordion({ items }: { items: ExperienceItem[] }) 
 			<button
 				type="button"
 				onClick={() => setOpen((value) => !value)}
-				className="w-fit text-base font-medium underline"
+				className="w-fit text-lg font-medium hover:cursor-pointer hover:underline"
 			>
-				{open ? "show less" : "view full resume"}
+				{open ? "Show less" : "View full resume"}
 			</button>
 		</>
 	);

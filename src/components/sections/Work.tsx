@@ -17,7 +17,7 @@ function WorkCard({ slug, title, tags, image }: WorkCardProps) {
 		>
 			<Image
 				src={image}
-				alt=""
+				alt={title}
 				fill
 				className="z-1 bg-gray-100 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
 			/>

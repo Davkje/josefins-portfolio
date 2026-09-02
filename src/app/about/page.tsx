@@ -157,17 +157,17 @@ export default function AboutPage() {
 							href="https://www.linkedin.com/in/josefin-mostr%C3%B6m-6673aa133/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="w-fit rounded-full border border-[#8c8c8c] bg-[#ff93e2] px-6 py-2.5 text-base font-medium text-black hover:opacity-80 transition-opacity sm:text-lg"
+							className="w-fit rounded-full bg-[#ff93e2] px-6 py-3 text-base font-medium text-black hover:scale-102 ease-in duration-100 transition-transform sm:text-2xl"
 						>
 							Connect with me on Linkedin
 						</a>
 					</div>
 				</section>
 
-				{/* ── Skill-scroll ── */}
+				{/* ── Skills ── */}
 				<section className="flex flex-col gap-6 px-6 py-12 sm:px-10 lg:px-22 lg:py-16">
 					<span className="inline-block w-fit bg-[#ff93e2] px-2.5 py-2.5 text-[clamp(1.75rem,5vw,2.5rem)] font-bold leading-[1.2]">
-						Skill-scroll!!!
+						Skills
 					</span>
 					<SkillBadges skills={skills} />
 				</section>
@@ -184,7 +184,7 @@ export default function AboutPage() {
 									<p className="text-xl font-bold leading-[1.2] sm:text-2xl">{title}</p>
 									<p className="text-base font-medium leading-[1.2] sm:text-lg">{period}</p>
 								</div>
-								<p className="text-base font-normal leading-[1.2] sm:text-lg">{description}</p>
+								<p className="text-base font-normal leading-[1.2] sm:text-xl">{description}</p>
 							</div>
 						))}
 					</div>
@@ -202,7 +202,7 @@ export default function AboutPage() {
 									<p className="text-xl font-bold leading-[1.2] sm:text-2xl">{title}</p>
 									<p className="text-base font-medium leading-[1.2] sm:text-lg">{period}</p>
 								</div>
-								<p className="text-base font-normal leading-[1.2] sm:text-lg">{description}</p>
+								<p className="text-base font-normal leading-[1.2] sm:text-xl">{description}</p>
 							</div>
 						))}
 					</div>
