@@ -11,6 +11,7 @@
   --color-foreground: var(--foreground);
   --color-mint: var(--mint);
   --font-sans: var(--font-satoshi), system-ui, sans-serif;
+  --font-display: var(--font-funnel-display), var(--font-satoshi), sans-serif;
 }
 
 body {
